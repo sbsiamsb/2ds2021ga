@@ -10,7 +10,7 @@
 
 <body class="container">
 
-    <h1 class="text-center">Calcula a Comissão dos Vendedores</h1>
+    <h1 class="text-center">Calcula o Pinto dos Vendedores</h1>
     <hr>
     
     <form method="GET">
@@ -31,9 +31,9 @@
         <input class="form-control form-control-lg" type="text" name="txtvendas" placeholder="Vendas">
         <br>
 
-        <label for="exampleFormControlInput1">% Da Comissão</label>
+        <label for="exampleFormControlInput1">% Do Pinto</label>
         <br>
-        <input class="form-control form-control-lg" type="text" name="txtcomissao" placeholder="Comissão">
+        <input class="form-control form-control-lg" type="text" name="txtpinto" placeholder="Comissão">
         <br>
         
         <button type="submit" class="btn btn-danger">Calcular</button>
@@ -48,11 +48,11 @@
             $nome=$_GET['txtnome'];
             $salfixo=$_GET['txtsalfixo'];
             $vendas=$_GET['txtvendas'];
-            $comissao=$_GET['txtcomissao'];
+            $pinto=$_GET['txtcpinto'];
 
-            // Calcula Comissao
-            $vrcomissao = ($vendas*$comissao)/100;
-            $saltotal = $salfixo+$vrcomissao;
+            // Calcula Pinto
+            $vrpinto = ($vendas*$comissao)/100;
+            $saltotal = $salfixo+$vrpinto;
 
             // Mostrando Resultado
             
